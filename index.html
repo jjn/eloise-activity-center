@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eloise's Activity Center</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="landing">
+    <h1>✨ Eloise's Activity Center ✨</h1>
+    <p class="subtitle">Pick an activity to play!</p>
+    <div class="activity-grid">
+      <button class="activity-card" data-activity="memory" aria-label="Memory Game">
+        <span class="card-icon">🃏</span>
+        <span class="card-title">Memory Game</span>
+        <span class="card-desc">Match the animals!</span>
+      </button>
+      <button class="activity-card" data-activity="flashcards" aria-label="Flashcards">
+        <span class="card-icon">📖</span>
+        <span class="card-title">Flashcards</span>
+        <span class="card-desc">Learn words & letters!</span>
+      </button>
+      <button class="activity-card" data-activity="counting" aria-label="Counting">
+        <span class="card-icon">🔢</span>
+        <span class="card-title">Counting</span>
+        <span class="card-desc">How many do you see?</span>
+      </button>
+      <button class="activity-card" data-activity="coloring" aria-label="Color by Numbers">
+        <span class="card-icon">🎨</span>
+        <span class="card-title">Color by Numbers</span>
+        <span class="card-desc">Paint a picture!</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="overlay" class="overlay hidden" role="dialog" aria-modal="true">
+    <div class="overlay-header">
+      <button id="back-btn" class="back-btn" aria-label="Go back">← Back</button>
+      <h2 id="overlay-title"></h2>
+    </div>
+    <div id="overlay-content" class="overlay-content"></div>
+  </div>
+
+  <div id="celebration" class="celebration hidden" aria-hidden="true"></div>
+
+  <script src="js/app.js"></script>
+  <script src="js/memory.js"></script>
+  <script src="js/flashcards.js"></script>
+  <script src="js/counting.js"></script>
+  <script src="js/coloring.js"></script>
+</body>
+</html>
