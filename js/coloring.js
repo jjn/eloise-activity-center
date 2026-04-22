@@ -19,61 +19,61 @@ App.register('coloring', {
         viewBox: '0 0 300 300',
         regions: [
           // Roof (triangle)
-          { d: 'M150 30 L30 140 L270 140 Z', colorNum: 1, labelX: 150, labelY: 110 },
+          { d: 'M150 30 L30 140 L270 140 Z', colorNum: 1, labelX: 150, labelY: 100 },
           // Front wall
-          { d: 'M50 140 L250 140 L250 270 L50 270 Z', colorNum: 3, labelX: 150, labelY: 205 },
+          { d: 'M50 140 L250 140 L250 270 L50 270 Z', colorNum: 3, labelX: 85, labelY: 250 },
           // Door
-          { d: 'M125 180 L175 180 L175 270 L125 270 Z', colorNum: 4, labelX: 150, labelY: 230 },
+          { d: 'M125 180 L175 180 L175 270 L125 270 Z', colorNum: 4, labelX: 150, labelY: 220 },
           // Left window
-          { d: 'M65 160 L110 160 L110 200 L65 200 Z', colorNum: 2, labelX: 87, labelY: 180 },
+          { d: 'M65 155 L115 155 L115 200 L65 200 Z', colorNum: 2, labelX: 90, labelY: 178 },
           // Right window
-          { d: 'M190 160 L235 160 L235 200 L190 200 Z', colorNum: 2, labelX: 212, labelY: 180 },
+          { d: 'M185 155 L235 155 L235 200 L185 200 Z', colorNum: 2, labelX: 210, labelY: 178 },
           // Chimney
-          { d: 'M210 30 L240 30 L240 100 L210 100 Z', colorNum: 6, labelX: 225, labelY: 65 },
+          { d: 'M210 30 L245 30 L245 100 L210 100 Z', colorNum: 6, labelX: 228, labelY: 65 },
         ]
       },
       {
         name: 'Butterfly',
-        viewBox: '0 0 300 300',
+        viewBox: '0 0 340 320',
         regions: [
-          // Body
-          { d: 'M140 80 L160 80 L155 260 L145 260 Z', colorNum: 5, labelX: 150, labelY: 170 },
+          // Body (wider for label visibility)
+          { d: 'M155 70 L185 70 L180 280 L160 280 Z', colorNum: 5, labelX: 170, labelY: 190 },
           // Upper left wing
-          { d: 'M140 100 Q40 30 30 120 Q50 170 140 150 Z', colorNum: 2, labelX: 85, labelY: 110 },
+          { d: 'M155 100 Q40 20 25 130 Q45 185 155 155 Z', colorNum: 2, labelX: 85, labelY: 120 },
           // Upper right wing
-          { d: 'M160 100 Q260 30 270 120 Q250 170 160 150 Z', colorNum: 2, labelX: 215, labelY: 110 },
+          { d: 'M185 100 Q300 20 315 130 Q295 185 185 155 Z', colorNum: 2, labelX: 255, labelY: 120 },
           // Lower left wing
-          { d: 'M140 150 Q50 170 40 230 Q80 280 140 210 Z', colorNum: 6, labelX: 85, labelY: 210 },
+          { d: 'M155 160 Q45 185 35 245 Q75 295 155 225 Z', colorNum: 6, labelX: 85, labelY: 230 },
           // Lower right wing
-          { d: 'M160 150 Q250 170 260 230 Q220 280 160 210 Z', colorNum: 6, labelX: 215, labelY: 210 },
+          { d: 'M185 160 Q295 185 305 245 Q265 295 185 225 Z', colorNum: 6, labelX: 255, labelY: 230 },
           // Left wing dot
-          { d: 'M75 105 A15 15 0 1 1 75 135 A15 15 0 1 1 75 105 Z', colorNum: 1, labelX: 75, labelY: 120 },
+          { d: 'M80 110 A20 20 0 1 1 80 150 A20 20 0 1 1 80 110 Z', colorNum: 1, labelX: 80, labelY: 130 },
           // Right wing dot
-          { d: 'M225 105 A15 15 0 1 1 225 135 A15 15 0 1 1 225 105 Z', colorNum: 1, labelX: 225, labelY: 120 },
+          { d: 'M260 110 A20 20 0 1 1 260 150 A20 20 0 1 1 260 110 Z', colorNum: 1, labelX: 260, labelY: 130 },
         ]
       },
       {
         name: 'Flower',
-        viewBox: '0 0 300 300',
+        viewBox: '0 0 340 340',
         regions: [
           // Stem
-          { d: 'M140 170 L160 170 L155 290 L145 290 Z', colorNum: 3, labelX: 150, labelY: 240 },
+          { d: 'M155 200 L185 200 L180 330 L160 330 Z', colorNum: 3, labelX: 170, labelY: 275 },
           // Left leaf
-          { d: 'M145 220 Q100 200 90 230 Q110 260 145 240 Z', colorNum: 3, labelX: 115, labelY: 230 },
+          { d: 'M160 255 Q100 230 85 265 Q105 300 160 275 Z', colorNum: 3, labelX: 115, labelY: 268 },
           // Right leaf
-          { d: 'M155 200 Q200 180 210 210 Q190 240 155 220 Z', colorNum: 3, labelX: 185, labelY: 210 },
+          { d: 'M180 235 Q240 215 250 248 Q230 280 180 255 Z', colorNum: 3, labelX: 220, labelY: 250 },
           // Top petal
-          { d: 'M150 50 Q185 70 180 110 Q150 130 120 110 Q115 70 150 50 Z', colorNum: 1, labelX: 150, labelY: 85 },
+          { d: 'M170 40 Q215 65 208 115 Q170 140 132 115 Q125 65 170 40 Z', colorNum: 1, labelX: 170, labelY: 85 },
           // Right petal
-          { d: 'M185 100 Q210 80 230 110 Q240 145 210 155 Q180 150 185 100 Z', colorNum: 4, labelX: 210, labelY: 120 },
+          { d: 'M210 95 Q245 70 270 110 Q280 155 245 170 Q210 162 210 95 Z', colorNum: 4, labelX: 248, labelY: 128 },
           // Bottom right petal
-          { d: 'M200 155 Q230 165 225 200 Q210 225 180 210 Q170 175 200 155 Z', colorNum: 6, labelX: 200, labelY: 185 },
+          { d: 'M235 175 Q270 188 265 228 Q248 258 215 240 Q200 205 235 175 Z', colorNum: 6, labelX: 240, labelY: 210 },
           // Bottom left petal
-          { d: 'M100 155 Q70 165 75 200 Q90 225 120 210 Q130 175 100 155 Z', colorNum: 6, labelX: 100, labelY: 185 },
+          { d: 'M105 175 Q70 188 75 228 Q92 258 125 240 Q140 205 105 175 Z', colorNum: 6, labelX: 100, labelY: 210 },
           // Left petal
-          { d: 'M115 100 Q90 80 70 110 Q60 145 90 155 Q120 150 115 100 Z', colorNum: 4, labelX: 90, labelY: 120 },
+          { d: 'M130 95 Q95 70 70 110 Q60 155 95 170 Q130 162 130 95 Z', colorNum: 4, labelX: 92, labelY: 128 },
           // Center
-          { d: 'M150 115 A30 30 0 1 1 150 175 A30 30 0 1 1 150 115 Z', colorNum: 4, labelX: 150, labelY: 145 },
+          { d: 'M170 120 A35 35 0 1 1 170 190 A35 35 0 1 1 170 120 Z', colorNum: 4, labelX: 170, labelY: 155 },
         ]
       },
       {
@@ -81,9 +81,9 @@ App.register('coloring', {
         viewBox: '0 0 300 300',
         regions: [
           // Outer star
-          { d: 'M150 20 L180 110 L270 110 L195 165 L220 260 L150 205 L80 260 L105 165 L30 110 L120 110 Z', colorNum: 4, labelX: 150, labelY: 130 },
+          { d: 'M150 20 L180 110 L270 110 L195 165 L220 260 L150 205 L80 260 L105 165 L30 110 L120 110 Z', colorNum: 4, labelX: 230, labelY: 240 },
           // Inner pentagon
-          { d: 'M150 90 L175 150 L155 195 L145 195 L125 150 Z', colorNum: 6, labelX: 150, labelY: 155 },
+          { d: 'M150 100 L175 150 L165 195 L135 195 L125 150 Z', colorNum: 6, labelX: 150, labelY: 155 },
         ]
       }
     ];
@@ -146,7 +146,11 @@ App.register('coloring', {
       let svg = `<svg viewBox="${pic.viewBox}" xmlns="http://www.w3.org/2000/svg">`;
       pic.regions.forEach((r, i) => {
         svg += `<path d="${r.d}" data-region="${i}" data-color-num="${r.colorNum}" fill="white"/>`;
-        svg += `<text x="${r.labelX}" y="${r.labelY}">${r.colorNum}</text>`;
+      });
+      // Render labels on top of all regions so they're never hidden behind shapes
+      pic.regions.forEach((r, i) => {
+        svg += `<circle cx="${r.labelX}" cy="${r.labelY}" r="12" fill="white" stroke="#999" stroke-width="1" class="label-bg" data-label-for="${i}"/>`;
+        svg += `<text x="${r.labelX}" y="${r.labelY}" data-label-for="${i}">${r.colorNum}</text>`;
       });
       svg += '</svg>';
       canvas.innerHTML = svg;
@@ -158,10 +162,10 @@ App.register('coloring', {
           // Hide number label when colored correctly
           const num = parseInt(region.dataset.colorNum);
           if (selectedColor.num === num) {
-            const text = region.nextElementSibling;
-            if (text && text.tagName === 'text') {
-              text.style.display = 'none';
-            }
+            const idx = region.dataset.region;
+            canvas.querySelectorAll(`[data-label-for="${idx}"]`).forEach(el => {
+              el.style.display = 'none';
+            });
           }
           checkComplete();
         });

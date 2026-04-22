@@ -3,6 +3,15 @@
 App.register('flashcards', {
   title: '📖 Flashcards',
   init(container) {
+    // Phonetic sounds for each letter (how the letter sounds, not its name)
+    const phonics = {
+      A: 'ah', B: 'buh', C: 'kuh', D: 'duh', E: 'eh',
+      F: 'fff', G: 'guh', H: 'huh', I: 'ih', J: 'juh',
+      K: 'kuh', L: 'lll', M: 'mmm', N: 'nnn', O: 'awe',
+      P: 'puh', Q: 'kwuh', R: 'rrr', S: 'sss', T: 'tuh',
+      U: 'uh', V: 'vvv', W: 'wuh', X: 'ks', Y: 'yuh', Z: 'zzz',
+    };
+
     const words = [
       { word: 'Cat', emoji: '🐱' },
       { word: 'Dog', emoji: '🐶' },
@@ -63,9 +72,22 @@ App.register('flashcards', {
         <div class="flashcard-emoji">${item.emoji}</div>
         <div class="flashcard-word"><span class="first-letter">${first}</span>${rest}</div>
         <div class="flashcard-hint">Starts with the letter <strong>${first}</strong>!</div>
+        <button class="sound-btn" aria-label="Hear the letter sound">🔊 Hear the sound</button>
       `;
+      card.querySelector('.sound-btn').addEventListener('click', () => speakPhonic(first));
       progress.textContent = `${current + 1} / ${shuffled.length}`;
       prevBtn.disabled = current === 0;
+    }
+
+    function speakPhonic(letter) {
+      if (!('speechSynthesis' in window)) return;
+      window.speechSynthesis.cancel();
+      const sound = phonics[letter.toUpperCase()] || letter;
+      const utter = new SpeechSynthesisUtterance(sound);
+      utter.rate = 0.75;
+      utter.pitch = 1.1;
+      utter.volume = 1;
+      window.speechSynthesis.speak(utter);
     }
 
     function go(dir) {

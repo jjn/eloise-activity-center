@@ -259,6 +259,29 @@ h1 {
   color: #666;
 }
 
+.sound-btn {
+  background: linear-gradient(135deg, #e1bee7, #ce93d8);
+  border: none;
+  border-radius: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4a148c;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+  margin-top: 0.5rem;
+}
+
+.sound-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(156, 39, 176, 0.3);
+}
+
+.sound-btn:active {
+  transform: scale(0.95);
+}
+
 .flashcard-nav {
   display: flex;
   gap: 1rem;
@@ -405,10 +428,14 @@ h1 {
   font-family: 'Segoe UI', Arial, sans-serif;
   font-size: 14px;
   font-weight: 700;
-  fill: #666;
+  fill: #444;
   pointer-events: none;
   text-anchor: middle;
   dominant-baseline: central;
+}
+
+.coloring-canvas svg .label-bg {
+  pointer-events: none;
 }
 
 .color-palette {
